@@ -1,0 +1,43 @@
+/* Quitar elementos innecesarios */
+nav, footer, .sidebar {
+    display: none;
+}
+
+/* Ajustes generales */
+body {
+    font-size: 12pt;
+    color: #000;
+    background: none;
+}
+
+/* Márgenes para la página impresa */
+@page {
+    margin: 1cm;
+}
+
+/* Ajustar imágenes y tablas */
+img {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+    border: 1px solid #000;
+    font-size: 10pt;
+}
+
+/* Evitar que el contenido importante se corte */
+h1, h2, h3, p, table {
+    page-break-inside: avoid;
+}
+/* Mostrar URL después del texto del enlace en la versión impresa */
+a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%; /* Tamaño ligeramente más pequeño */
+    color: #333; /* Color neutro para que no distraiga demasiado */
+}

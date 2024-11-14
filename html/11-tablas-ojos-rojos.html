@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<table border="1">
+		<caption>A test table with merged cells</caption>
+		<thead>	
+			<tr>
+					<td rowspan="2"></td>
+					<th colspan="2" scope="colgroup" id="avg"> Average</th>
+					<th rowspan="2" scope="col" id="r">Red Eyes</th>
+			</tr>
+			<tr>
+					<th scope="col" id="h" headers="avg">Height</th>
+					<th scope="col" id="w" headers="avg">Weight</th>
+			</tr>	
+		</thead>
+		<tbody>	
+			<tr>
+					<th scope="row" id="m">Males</th>	
+					<td headers="h m">1.9</td>
+					<td>0.0003</td>
+					<td>40%</td>
+			</tr>
+			<tr>
+					<th scope="row" id="f">Females</th>	
+					<td headers="h m">1.7</td>
+					<td>0.0002</td>
+					<td>43%</td>
+			</tr>
+		</tbody>	
+		</table>
+</body>
+</html>

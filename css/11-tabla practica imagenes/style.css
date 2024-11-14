@@ -1,0 +1,29 @@
+.cajaimg {
+  background-color: #c9ccd5;
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+figure {
+  background-color: grey;
+  width: 200px;
+  height: 420px;
+  background-color: #dfdfdf;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+img {
+  max-width: 100%;
+}
+.img-border {
+  border: thick double #32a1ce;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;
+}

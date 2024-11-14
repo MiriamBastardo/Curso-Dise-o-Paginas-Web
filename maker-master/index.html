@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+    <!-- site metas -->
+    <title>Genius Web</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <!-- fevicon -->
+    <link rel="icon" href="images/logoGenius.png" type="image/gif"/>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+       <script>
+        // Función para ocultar el aviso de cookies
+        function aceptarCookies() {
+            document.getElementById('avisoCookies').style.display = 'none';
+            localStorage.setItem('cookiesAceptadas', 'true');
+        }
+
+        // Comprobar si ya se han aceptado las cookies
+        window.onload = function() {
+            if (localStorage.getItem('cookiesAceptadas') === 'true') {
+                document.getElementById('avisoCookies').style.display = 'none';
+            }
+        };
+    </script>
+
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader">
+        <img src="images/loading.gif" alt="#"/>
+      </div>
+    </div>
+    <!-- end loader -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Inicio</a>
+      <a href="#about">¿Quiénes somos?</a>
+      <a href="#we_Do">¿Qué ofrecemos?</a>
+      <a href="#software">Tú comisión</a>
+      <a href="#testimonial">Testimonios</a>
+      <a href="#contact">¡Recomienda y gana!</a>
+    </div>
+    <!-- Aviso de cookies -->
+    <div id="avisoCookies" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: lightgray; padding: 10px; text-align: center;">
+        <p>Este sitio web utiliza cookies para mejorar la experiencia de usuario. <a href="/politica-cookies" target="_blank">Más información</a>.</p>
+        <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
+    <!-- header -->
+    <header>
+      <!-- header inner -->
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="sea_icon d_none ">
+                <a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="images/logoGenius.png" alt="#"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="right_bottun">
+                <button class="openbtn" onclick="openNav()">
+                  <img src="images/menu_icon.png" alt="#contact"/>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner -->
+    <section class="banner_main">
+      <div id="banner1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#banner1" data-slide-to="0" class="active"></li>
+          <li data-target="#banner1" data-slide-to="1"></li>
+          <li data-target="#banner1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="text-bg">
+                  <h1>GENIUS</h1>
+                  <span>WEB</span>
+                  <a class="read_more" href="#about">¿Quiénes somos?</a>
+                  <ul class="social_team">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="text-bg">
+                  <h1>GENIUS</h1>
+                  <span>WEB</span>
+                  <a class="read_more" href="#we_do">¿Qué ofrecemos?</a>
+                  <ul class="social_team">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="text-bg">
+                  <h1>GENIUS</h1>
+                  <span>WEB</span>
+                  <a class="read_more" href="#software">Tú comisión</a>
+                  <ul class="social_team">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+    <!-- end banner -->
+    <!-- about section -->
+    <div id="about" class="about">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="titlepage">
+                  <h2>¿Quiénes somos?</h2>
+                  <p>En Genius Web sabemos lo que significa estar sobrecargado de trabajo. Por eso, hemos creado una plataforma pensada para profesionales como tú: programadores, diseñadores y expertos digitales que, además de tener mucho talento, siempre están ocupados. Nosotros nos encargamos de hacer el trabajo que te piden, y tú solo te dedicas a referirnos a tus contactos. A cambio, recibes una comisión por cada cliente que cierre un contrato con nosotros. ¡Así de fácil es ganar dinero con Genius Web!</p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="about_img">
+                  <figure>
+                    <img src="images/about_img.png" alt="#"/>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="about_right">
+              <figure>
+                <img src="images/about_right.jpg" alt="#"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about section -->
+    <!-- software section -->
+    <div id="software" class="software">
+      <div class="container-fluid">
+        <div class="row d_flex">
+          <div class="col-md-6">
+            <div class="titlepage">
+              <h2>Tú Comisión</h2>
+              <p>
+                Es muy sencillo referir y ganar.
+                <br/>
+                Simplemente llena el formulario.
+                <br/>
+                Te contactaremos a la brevedad para verificar la información. Después, contactaremos con tu referido. Si contrata nuestros servicios, te pagaremos la comisión:
+                <br/>
+                *Si es la básica serán 100€. <br/>
+                *En caso que sean algunas de las tarifas más completas serán 200€,
+                <br/>
+                ¡Así de fácil!
+              </p>
+              <a class="read_more" href="#contact">¡Refiere Ahora!</a>
+            </div>
+          </div>
+          <div class="col-md-6 padding_right2">
+            <div class="software_img">
+              <figure>
+                <img src="images/software_img.jpg" alt="#"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- software section -->
+    <!-- We Do section -->
+    <div id="we_Do" class="we_do">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>¿Qué ofrecemos?</h2>
+              <p>Desde el diseño imagen digital desde cero, creación de web, marketing, posicionamiento SEO, creación de imagen digital, hasta desarrollo y mantenimiento de sitios Genios Web, ofrecemos una comisión de 100€ a 200€.En resumen: Tú recomiendas, nosotros trabajamos y tú ganas .</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div id="hover_color" class="we_box">
+              <span>1</span>
+              <h3>Nuestra Misión</h3>
+              <p>Liberarte del trabajo extra y ayudarte a ganar dinero. Nosotros nos encargamos del trabajo duro: crear webs increíbles para tus contactos. Si tu recomendación se convierte en cliente, te pagamos una comisión de entre 100€ y 200€. Es así de simple.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="hover_color" class="we_box">
+              <span>1</span>
+              <h3>Nuestra Visión</h3>
+              <p>Queremos ofrecer una solución rápida y sencilla para todos esos "hazme una web" que te llegan constantemente. ¡Recomienda, relájate y gana! Con nuestro servicio, maximizas tus contactos y minimizas tu carga de trabajo.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="hover_color" class="we_box">
+              <span>1</span>
+              <h3>
+                Nuestro Objetivo
+                <br/>
+              </h3>
+              <p>Los objetivos son enfocados en proporcionar una solución práctica para profesionales del mundo digital. Queremos que te enfoques en lo que realmente te apasiona, sin preocuparte por las solicitudes de creación de páginas web.</p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <a class="read_more" href="#contact">Recomienda</a>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end We Do section -->
+    <!-- Our  team section -->
+    <div id="services" class="services" style="background-color: #1a0063; padding: 60px 0;">
+      <!--
+        Fondo azul
+      -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <!-- Encabezado con fondo azul y texto blanco -->
+              <h2 style="color: #fff;">Nuestros Servicios</h2>
+              <p style="color: #e0e0e0;">Soluciones personalizadas para potenciar la presencia digital de tu negocio.</p>
+              <br/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Servicio 1: Diseño de Páginas Web -->
+          <div class="col-md-4">
+            <div class="service_box" style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+              <figure>
+                <img src="images/service_img1.jpg" alt="Diseño Web" class="img-fluid"/>
+              </figure>
+              <div class="service_info">
+                <h3 style="color: #1a0063;">Diseño Web</h3>
+                <!--
+                  Título en azul
+                -->
+                <p>Páginas web atractivas y funcionales, optimizadas para dispositivos móviles y SEO. Creamos desde cero la imagen digital de tu proyecto.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Servicio 2: Gestión de Redes Sociales -->
+          <div class="col-md-4">
+            <div class="service_box" style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+              <figure>
+                <img src="images/service_img2.jpg" alt="Redes Sociales" class="img-fluid"/>
+              </figure>
+              <div class="service_info">
+                <h3 style="color: #1a0063;">Redes Sociales</h3>
+                <p>Estrategias de contenido para aumentar visibilidad y engagement en redes sociales, que refieran tus productos o servicios.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Servicio 3: Marketing de Contenidos -->
+          <div class="col-md-4">
+            <div class="service_box" style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+              <figure>
+                <img src="images/service_img3.jpg" alt="Marketing de Contenidos" class="img-fluid"/>
+              </figure>
+              <div class="service_info">
+                <h3 style="color: #1a0063;">Marketing de Contenidos</h3>
+                <p>Contenido optimizado para SEO que conecta con tu audiencia y potencia tu marca. Utilizamos las últimas estrategias más actualizadas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Our  team section -->
+    <!-- contact section -->
+    <div id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Refiere a tu contacto</h2>
+              <p>En este formulario podrás rellenar tu solicitud para que te contactemos y refieras a quién desees.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="con_bg">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Formulario de contacto -->
+            <div class="col-md-6">
+              <form action="proceso-formularioGenius.php" method="post" id="request" class="main_form" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="row">
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="¿Cómo te llamas?" type="text" name="Name" required/>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="¿Cuál es tu email?" type="email" name="Email" required/>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" placeholder="¿A qué número te llamamos?" type="tel" name="Phone -Number"/>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactusmess" placeholder="Aquí puedes decirnos quién es tu contacto y gana de inmediato" type="text" name="Message" required/>
+                  </div>
+                   <div class="col-md-12">
+            <input type="checkbox" name="privacidad" id="privacidad" required>
+            <label for="privacidad" style="color:white;">
+                He leído y acepto la 
+                <a href="politica-privacidad.html" target="_blank" style="color: white; text-decoration: underline;">política de privacidad</a>
+            </label>
+        </div>
+        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                  <div class="col-md-12">
+                    <button class="send_btn">Enviar</button>
+                  </div>
+                  <div class="col-md-12">
+                    <ul class="location_form">
+                      <li>
+                        <a href="tel:+34%680%365%455">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                        </a>
+                        +34 680 365 455
+                      </li>
+                      <li>
+                        <a href="mailto:contacto@geniusweb.es">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        contacto@geniusweb.es
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-12">
+                    <ul class="social_icon">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                    <br/>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Sustitución de Google Maps por una imagen -->
+            <div class="col-md-6 padding_right2">
+              <div class="image_section">
+                <figure>
+                  <img src="images/contact_image.jpg" alt="Imagen de contacto" class="img-fluid" style="border-radius: 8px;"/>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact section -->
+    <!-- testimonial section -->
+    <div id="testimonial" class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Nos Recomiendan</h2>
+              <p>
+                Tal vez tú, no sabes quiénes somos.
+                <br/>
+                Pero, ellos... ¡Ya nos conocen!
+                <br/>
+                Saben nuestra trayectoria y propósito.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="carousel-caption ">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="testimonial_box">
+                            <figure>
+                              <img src="images/anaDelia.png" alt="#"/>
+                            </figure>
+                            <h3>
+                              <a href="https://www.linkedin.com/in/anadeliacampo/" target="_blank" style="color: inherit; text-decoration: none;">
+        Ana Delia Campos
+    </a>
+    <br/>
+    <span class="blu">Formadora Diseño y Desarrollo Web en Zaragoza Dinámica</span>
+</h3>
+                            <p>Recomiendo este proyecto innovador Genius Web, por ser un propósito legítimo e interesante de colaborar al desarrollo web, beneficiando a quiénes deseen ganar un dinero extra. He sido tutora de una de sus participantes y puedo recomendarla con absoluta confianza.</p>
+                            <i>
+                              <img src="images/test.png" alt="#"/></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="testimonial_box">
+                            <figure>
+                              <img src="images/emilio.png" alt="#"/>
+                            </figure>
+                            <h3><a href="https://www.linkedin.com/in/emilio-astier-peña/" target="_blank" style="color: inherit; text-decoration: none;">
+       Emilio Astier Peña
+    </a></a>
+    <br/>
+    <span class="blu">Junior Java Developer</span>
+                            </h3>
+                            <p>Es un proyecto interesante para conseguir dinero, y recomendar a personas responsables. Se encargan de levantar la imagen digital desde cero.</p>
+                            <i>
+                              <img src="images/test.png" alt="#"/></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="full cross_layout">
+                            <div class="testimonial_box">
+                              <figure>
+                                <img src="images/our.png" alt="#"/>
+                              </figure>
+                              <h3>
+                                David Tejadas
+                                <br/>
+                                <span class="blu">Desarrollador Web</span>
+                              </h3>
+                              <p>Son responsables en su promesa de servicio. Puedes probarlo y ganar dinero. Vale la pena recomendarlos y quedar bien con tus contactos.</p>
+                              <i>
+                                <img src="images/test.png" alt="#"/></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <i class='fa fa-angle-left'></i>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <i class='fa fa-angle-right'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end testimonial section -->
+    <!--  footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Enlaces útiles -->
+            <div class="col-md-4">
+              <div class="fid_box" style="text-align: left; color: white; font-size: 16px;">
+                <h3>Enlaces útiles</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                  <li>
+                    <a href="https://www.bluguea.es/" target="_blank" style="color: white; text-decoration: none;">Bluguea</a>
+                    <br/>
+                    <span style="font-size: 14px;">"Hacemos web de diseño único adaptado a tus necesidades".</span>
+                  </li>
+                  <li style="margin-top: 15px;">
+                    <a href="https://adamamarketing.es/" target="_blank" style="color: white; text-decoration: none;">Adama Marketing</a>
+                    <br/>
+                    <span style="font-size: 14px;">"Nuestro fuerte es hacer marcas inolvidables".</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Contacto -->
+            <!-- Contacto -->
+            <div class="col-md-4">
+              <div class="fid_box" style="color: white; font-size: 16px;">
+                <h3>Contáctanos</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                  <li>
+                    <a href="tel:+34680365455" style="color: white; text-decoration: none;">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                      +34 680 365 455
+                    </a>
+                  </li>
+                  
+                  <li style="margin-top: 10px;">
+                    <a href="mailto:contacto@geniusweb.es" style="color: white; text-decoration: none;">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      contacto@geniusweb.es
+                    </a>
+                  </li>
+                  <li style="margin-top: 20px;">
+                    <a href="https://wa.me/34624016959" target="_blank">
+        <img src="images/WhatsAppButtonGreenMedium.svg" alt="WhatsApp Button" style="width: 250px; height: 60px;">
+    </a>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Novedades y Redes Sociales -->
+            <div class="col-md-4">
+              <div class="fid_box">
+                <h3>Novedades y Publicaciones</h3>
+                <form class="news_form">
+                  <input class="letter_form" placeholder=" Email" type="text" name="Email"/>
+                  <button class="sumbit">Suscríbete</button>
+                </form>
+                <ul class="social_icon">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  © 2024 Todos los derechos reservados. Diseñado por
+                  <a href="https://bluguea.es">Bluguea</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+       function openNav() {
+         document.getElementById("mySidepanel").style.width = "250px";
+       }
+       
+       function closeNav() {
+         document.getElementById("mySidepanel").style.width = "0";
+       }
+    </script>
+    <script>
+       // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+       // Australia.
+       function initMap() {
+         var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 11,
+           center: {lat: 40.645037, lng: -73.880224},
+           });
+       
+       var image = 'images/maps-and-flags.png';
+       var beachMarker = new google.maps.Marker({
+           position: {lat: 40.645037, lng: -73.880224},
+           map: map,
+           icon: image
+         });
+       }
+    </script>
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+    <!-- end google map js -->
+    <!-- intento de codigo <script>
+      // Inicializar el mapa con marcador en la ubicación de Zaragoza
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17, // Ajusta el zoom para que se vea más cerca
+          center: {lat: 41.6569177, lng: -0.8813576}, // Coordenadas de C. de Salduba, Zaragoza
+        });
+    
+        // Imagen para el marcador
+        var image = 'images/maps-and-flags.png'; // Cambia esta ruta a la imagen que prefieras para el marcador
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 41.6569177, lng: -0.8813576}, // Misma ubicación del mapa
+          map: map,
+          icon: image // Icono personalizado
+        });
+      }
+    </script>
+    
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <!-- end google map js -->
+  -->
+</body>
+</html>

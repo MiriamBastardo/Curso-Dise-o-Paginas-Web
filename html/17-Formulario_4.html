@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario 4</title>
+  </head>
+  <body>
+    <h1>Formulario 4</h1>
+    <form action="">
+      <!-- Datos Personales -->
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+          <label for="firstName">First Name:</label>
+          <input name="firstName" id="firstName" type="text" autocomplete="given-name"/>
+          <br/>
+          <br/>
+          <label for="lastName">Last Name:</label>
+          <input name="lastName" id="lastName" type="text" autocomplete="family-name"/>
+          <br/>
+          <br/>
+          <label for="start">Start month:</label>
+          <input type="month" id="start" name="start" min="2018-03" value="2018-05"/>
+          <br/>
+          <br/>
+          <label for="email">Email:</label>
+          <input name="email" id="email" type="email" autocomplete="on"/>
+        </div>
+      </fieldset>
+      <br/>
+      <!-- Elección de Mascota -->
+      <fieldset>
+        <legend>Choose a pet:</legend>
+        <div>
+          <label for="pet-select">Pet:</label>
+          <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+          </select>
+        </div>
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend>Choose your monster's colors:</legend>
+        <div>
+          <input type="color" id="head" name="head" value="#e66465"/>
+          <label for="head">Head</label>
+        </div>
+        <div>
+          <input type="color" id="body" name="body" value="#f6b73c"/>
+          <label for="body">Body</label>
+        </div>
+      </fieldset>
+      <!-- Historia -->
+      <fieldset>
+        <legend>Tell us your story:</legend>
+        <label for="story">Story:</label>
+        <br/>
+        <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...</textarea>
+      </fieldset>
+      <br/>
+      <!-- Imagen de perfil -->
+      <fieldset>
+        <legend>Choose a profile picture:</legend>
+        <label for="avatar">Profile picture:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"/>
+      </fieldset>
+      <br/>
+      <!-- Semana del campamento -->
+      <fieldset>
+        <legend>Choose a week in May or June:</legend>
+        <label for="camp-week">Camp week:</label>
+        <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required/>
+      </fieldset>
+      <br/>
+      <!-- Botón de añadir a favoritos -->
+      <button class="favorite styled" type="button">Add to favorites</button>
+    </form>
+  </body>
+</html>

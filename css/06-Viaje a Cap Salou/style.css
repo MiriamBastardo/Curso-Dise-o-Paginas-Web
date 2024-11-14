@@ -1,0 +1,201 @@
+ html {
+   scroll-behavior: smooth;
+ }
+ body {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+   counter-reset: section;
+ }
+ #cookie-notice {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: #333;
+   color: white;
+   padding: 10px;
+   text-align: center;
+   display: none;
+   /* Ocultar por defecto */
+   z-index: 1000;
+ }
+ #cookie-notice button {
+   background-color: #f1c40f;
+   border: none;
+   padding: 5px 10px;
+   color: black;
+   cursor: pointer;
+   margin-left: 15px;
+ }
+ header, footer {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 1em;
+ }
+ main {
+   padding: 2em;
+ }
+ article {
+   margin-bottom: 2em;
+ }
+ section {
+   counter-reset: subsection;
+ }
+ h1 {
+   color: #fff;
+ }
+ section>ul {
+   counter-reset: subsection;
+ }
+ h2::before {
+   color: #333;
+   counter-increment: section;
+   content: counter(section)" .";
+ }
+ h3::before {
+   color: #333;
+   counter-increment: subsection;
+   content: counter(section)"." counter(subsection)" .";
+ }
+ .related-content h4 {
+   color: #555;
+ }
+ footer {
+   padding: 1em 0;
+   font-size: 0.9em;
+ }
+ footer ul {
+   list-style: none;
+   padding: 0;
+ }
+ footer ul li {
+   display: inline;
+   margin: 0 10px;
+ }
+ footer ul li a {
+   color: #ffc107;
+   text-decoration: none;
+ }
+ footer ul li a:hover {
+   text-decoration: underline;
+ }
+ main nav ol {
+   counter-reset: navigation;
+   list-style: none;
+ }
+ main nav li::before {
+   counter-increment: navigation;
+   content: counters(navigation, ".") ". ";
+ }
+ .content-container {
+   background-color: ##0d6efd;
+   /* Color de fondo claro */
+   padding: 10px;
+   border-radius: 8px;
+ }
+ /* Estilo para pantallas pequeñas */
+
+ @media (max-width: 576px) {
+   body {
+     text-align: center;
+     padding: 10px;
+   }
+ }
+ /* Estilo para pantallas medianas */
+
+ @media (min-width: 768px) and (max-width: 992px) {
+   body {
+     text-align: center;
+   }
+   .container {
+     max-width: 750px;
+   }
+ }
+ /* Estilo para pantallas grandes */
+
+ @media (min-width: 992px) {
+   .container {
+     max-width: 960px;
+     margin: 0 auto;
+   }
+ }
+ .navbar {
+   background-color: #0d6efd !important;
+ }
+ footer {
+   background-color: #0d6efd;
+   color: #ffffff;
+   /* Esto es opcional, para asegurar que el texto en el footer sea blanco */
+ }
+ /* Contenedor principal */
+
+ .button-list-container {
+   width: 250px;
+   border: 2px solid #000;
+   border-radius: 10px;
+   overflow: hidden;
+   background-color: #ffffff;
+ }
+ /* Encabezado */
+
+ .button-list-header {
+   text-align: center;
+   font-weight: bold;
+   padding: 10px;
+   background-color: #ffffff;
+   border-bottom: 2px solid #000;
+ }
+ /* Lista de botones */
+
+ .button-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ .button-list li {
+   border-top: 1px solid #000;
+ }
+ /* Estilos de los botones */
+
+ .button-list a {
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   color: #000;
+   text-decoration: none;
+   font-weight: bold;
+   background-color: #d2f0f3;
+   transition: background-color 0.3s;
+ }
+ .button-list a:hover {
+   background-color: #c0e7eb;
+ }
+ /* Estilos de los íconos */
+
+ .button-list a i {
+   margin-right: 10px;
+   font-size: 1.2em;
+ }
+ /* Último botón */
+
+ .button-list li:last-child a {
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+ }
+ /*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 99999;
+}
+.ir-arriba:hover{
+  background-color: white#333;
+  color:chartreuse;
+}
+
+ /* Iconos de Font Awesome */
+
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');

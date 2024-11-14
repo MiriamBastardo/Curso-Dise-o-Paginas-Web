@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>foto redonda CCS</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body class="container">
+    <div>
+      <figure>
+        <div class="cajaimg">
+          <img src="img/imagenredonda.png" alt="imagen redonda"/>
+        </div>
+        <h3>
+          <figcaption>Luis Perez</figcaption>
+        </h3>
+        <h3>
+          <cite>Gerente</cite>
+        </h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, quis laborum vero sint magnam expedita veritatis. Praesentium sint cupiditate, et! Ea autem pariatur id optio perspiciatis deserunt harum facere modi?</p>
+      </figure>
+    </div>
+    <br/>
+    <!-- segundo ejercicio efectos con bordes -->
+    <div class="img-border">
+      <img src="img/efectoscon-bordes.png" alt="imagen redonda"/>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

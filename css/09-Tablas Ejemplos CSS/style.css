@@ -1,0 +1,22 @@
+body {
+  padding: 1em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td, th {
+  padding: .25em;
+  border: 1px solid black;
+}
+tbody:nth-child(odd) {
+  background: #CCC;
+}
+/*
+tbody:hover td[rowspan], tr:hover td {
+   background: red; 
+}*/
+
+tbody:hover, tr.hover, th.hover, td.hover, tr.hoverable:hover {
+  background-color: #e6f9ff;
+}

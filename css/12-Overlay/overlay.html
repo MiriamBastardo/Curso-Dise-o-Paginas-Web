@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo overlay</title>
+    <style>
+        img{
+            max-width: 100%;
+            height: auto;
+            }
+            figure a{
+                width:400px;
+                display:block;
+                position: relative;
+                color: rgb(247, 246, 246);
+            }
+            figcaption{
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgb(1, 46, 7);
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: all 0.3s;
+            }
+            figure a:hover figcaption{
+                opacity: 1;
+            }
+            
+    </style>
+</head>
+<body>
+    <!-- https://web.archive.org/web/20230323020432/http://www.amandaleeson.com/ -->
+     <div class="work">
+        <figure>
+    <a href="#">
+     <img src="img/rcptn-2.jpg" alt="recepcion">
+     <figcaption>NH Hotel Zaragoza</figcaption>
+    </a>
+    </figure>
+    <figure>
+        <a href="#">
+         <img src="img/rcptn-2.jpg" alt="recepcion">
+         <figcaption>NH Hotel Zaragoza</figcaption>
+        </a>
+        </figure>
+    </div>
+        <figure>
+            <a href="#">
+             <img src="img/rcptn-2.jpg" alt="recepcion">
+             <figcaption>NH Hotel Zaragoza</figcaption>
+            </a>
+            </figure>
+            <figure>
+                <a href="#">
+                 <img src="img/rcptn-2.jpg" alt="recepcion">
+                 <figcaption>NH Hotel Zaragoza</figcaption>
+                </a>
+                </figure>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Examen CSS</title>
+    <meta name="robots" content="noindex, nofollow/"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  </head>
+  <body>
+    <header>
+      <!-- Cabecera y enlaces -->
+      <ul class="rrss">
+        <li>
+          <a href="#" title="Facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Instagram">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="YouTube">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <!-- menu de navegacion -->
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li>
+            <a href="https://viajes.nationalgeographic.com.es/p/japon" target="_blank">ESPAÑA</a>
+          </li>
+          <li>
+            <a href="https://viajes.nationalgeographic.com.es/t/escapadas" target="_blank">EUROPA</a>
+          </li>
+          <li>
+            <a href="https://viajes.nationalgeographic.com.es/p/japon" target="_blank">ASIA</a>
+          </li>
+          <li>
+            <a href="https://www.worldpackers.com/es/articles/tips-de-viaje" target="_blank">CONSEJOS DE VIAJE</a>
+          </li>
+          <li>
+            <a href="https://miriambastardo.wixsite.com/podcast" target="_blank">SOBRE MÍ</a>
+          </li>
+          <li>
+            <a href="mailto:miriam.bastardo@gmail.com" class="boton-contacto">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class=" container">
+      <article class="article-container">
+        <!-- Título del artículo -->
+        <h1 class="article-title">Mi Aventura en Japón</h1>
+        <!-- Ficha informativa -->
+        <div class="info-card">
+          <div class="info-item">
+            <i class="icon icon-location"></i>
+            <a href="https://viajes.nationalgeographic.com.es/p/japon" target="_blank">Japón (Asia)</a>
+          </div>
+          <div class="info-item">
+            <i class="icon icon-duration"></i>
+            <span>15 días</span>
+          </div>
+          <div class="info-item">
+            <i class="icon icon-budget"></i>
+            <span>1500€</span>
+          </div>
+          <div class="info-item">
+            <i class="icon icon-people"></i>
+            <span>2 personas</span>
+          </div>
+          <div class="info-item">
+            <i class="icon icon-rating"></i>
+            <span>4.5 / 5</span>
+          </div>
+        </div>
+        <!-- Fecha de publicación -->
+        <p class="publish-date">Publicado el 10 de noviembre de 2024</p>
+        <!-- Imagen destacada -->
+        <figure>
+          <img src="img/japon.png" alt="Japón más allá de la Ruta Dorada " width="1100" height="1000"class="inline-image"/>
+          <figcaption>Japón más allá de la Ruta Dorada: un viaje por su legado histórico y riqueza natural.</figcaption>
+        </figure>
+        <!-- Introducción -->
+        <p class="intro">Japón, una tierra de contrastes, donde la tradición se encuentra con la tecnología moderna. A continuación, te contaré mi experiencia en este maravilloso país...</p>
+        <p>Japón es una nación insular del océano Pacífico con densas ciudades, palacios imperiales, parques nacionales montañosos y miles de santuarios y templos. El tren bala Shinkansen conecta las islas principales de Kyushu (con las playas subtropicales de Okinawa), Honshu (con Tokio y el memorial del bombardeo atómico en Hiroshima) y Hokkaido (famosa por el esquí). Tokio, la capital, es famosa por sus rascacielos, el comercio y la cultura pop</p>
+        <!-- Índice de contenidos -->
+        <nav class="table-of-contents">
+          <h2>Índice de contenidos</h2>
+          <ul>
+            <li>
+              <a href="#preparativos">Los Preparativos</a>
+            </li>
+            <li>
+              <a href="#viaje">El viaje</a>
+              <ul>
+                <li>
+                  <a href="#ubicacion">Dónde está situada y cómo llegar</a>
+                </li>
+                <li>
+                  <a href="#lugares">Lugares imprescindibles para visitar</a>
+                </li>
+                <li>
+                  <a href="#alojamiento">Dónde alojarse</a>
+                </li>
+                <li>
+                  <a href="#comida">Dónde comer</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- Secciones del artículo -->
+        <section id="preparativos">
+          <h2>1. Los Preparativos</h2>
+          <p>Antes de viajar, es importante realizar una buena planificación para aprovechar al máximo la experiencia en Japón. Este destino, lleno de contrastes culturales y tradiciones milenarias, ofrece una gran diversidad de actividades y lugares que requieren de organización previa. Aquí tienes algunos consejos clave para preparar tu viaje:</p>
+          <ul>
+            <li>
+              <strong>Documentación y Visado:</strong>
+              Dependiendo de tu país de origen, es posible que necesites un visado para entrar en Japón. Es recomendable revisar los requisitos migratorios con antelación y preparar los documentos necesarios para evitar inconvenientes en la llegada.
+            </li>
+            <li>
+              <strong>Itinerario de Viaje:</strong>
+              Japón tiene mucho que ofrecer, desde las modernas calles de Tokio hasta los templos de Kioto y las paisajes naturales de Hokkaido. Planificar los lugares que deseas visitar y la duración de la estancia en cada ciudad te ayudará a aprovechar al máximo tu tiempo.
+            </li>
+            <li>
+              <strong>Idioma y Cultura:</strong>
+              Aunque Japón es un país acogedor, conocer algunas frases básicas en japonés, como saludos y preguntas comunes, facilitará la interacción con los locales. Además, es importante informarse sobre las costumbres y normas de comportamiento, ya que los japoneses valoran mucho la etiqueta y el respeto mutuo.
+            </li>
+            <li>
+              <strong>Presupuesto y Cambio de Divisa:</strong>
+              Japón no es un destino económico, por lo que es fundamental definir un presupuesto. Cambia una parte de tu dinero a yenes japoneses antes del viaje y considera utilizar tarjetas que no cobren comisiones por transacciones internacionales.
+            </li>
+            <li>
+              <strong>Seguro de Viaje:</strong>
+              Contratar un seguro de viaje es una buena práctica, especialmente si tienes planeadas actividades como senderismo o visitas a zonas rurales. Japón cuenta con un excelente sistema de salud, pero el coste de atención médica puede ser elevado sin seguro.
+            </li>
+          </ul>
+          <blockquote>“Viajar prepara el alma para nuevas experiencias.”</blockquote>
+          <figure>
+            <img src="img/preparativos.png" alt="Japón  preparativos" width="900" height="600"class="inline-image"/>
+            <figcaption>Otoño es una época maravillosa para viajar a Japón.</figcaption>
+          </figure>
+          <p>Los preparativos no solo aseguran una experiencia sin sobresaltos, sino que también nos abren a la riqueza de un país único. Japón es un lugar donde cada detalle cuenta, y estar preparado te permitirá vivir cada momento al máximo.</p>
+        </section>
+        <section id="viaje">
+          <h2>2. El viaje</h2>
+          <section id="ubicacion">
+            <h3>2.1. Dónde está situada y cómo llegar</h3>
+            <p>Japón es un archipiélago situado en el este de Asia, rodeado por el océano Pacífico y compuesto por más de 6,800 islas, de las cuales las cuatro principales son Honshu, Hokkaido, Kyushu y Shikoku. Este país insular se encuentra al este de China, Corea y Rusia, con una geografía montañosa y volcanes activos, incluido el emblemático Monte Fuji. Japón es conocido por su mezcla única de tradición milenaria y tecnología moderna, lo que lo convierte en un destino fascinante para explorar.</p>
+            <h4>Opciones para llegar a Japón</h4>
+            <ul>
+              <li>
+                <strong>Vuelos internacionales:</strong>
+                La mayoría de los visitantes llegan a Japón por vía aérea. Los principales aeropuertos internacionales, como el Aeropuerto Internacional de Narita (cerca de Tokio) y el Aeropuerto Internacional de Kansai (cerca de Osaka), conectan Japón con muchas de las principales ciudades del mundo. Las aerolíneas ofrecen vuelos directos desde Europa, América, Oceanía y Asia.
+              </li>
+              <li>
+                <strong>Trenes de alta velocidad y transporte interno:</strong>
+                Para aquellos que ya se encuentran en países vecinos, algunos ferris internacionales conectan Japón con Corea del Sur y China, aunque esta opción es menos común. Una vez en Japón, el transporte es rápido y eficiente. El famoso Shinkansen o tren bala permite a los visitantes recorrer grandes distancias en poco tiempo, conectando ciudades como Tokio, Kioto, Osaka y Hiroshima en pocas horas.
+              </li>
+              <li>
+                <strong>Visas y requisitos de entrada:</strong>
+                Japón ofrece una política de exención de visa para turistas de numerosos países, lo que facilita la entrada para visitas cortas. Es importante verificar los requisitos de entrada antes de viajar, ya que estos pueden cambiar según la nacionalidad y la duración de la estancia.
+              </li>
+            </ul>
+            <figure>
+              <img src="img/viaje.png" alt="Japón  preparativos" width="900" height="600"class="inline-image"/>
+              <figcaption>Uno de los nuevos A350 de Air France, como los que vuelan a Japón.</figcaption>
+            </figure>
+            <p>En definitiva, Japón es accesible desde prácticamente cualquier punto del mundo y, una vez allí, el excelente sistema de transporte facilita la movilidad interna, haciendo que explorar este país lleno de historia y modernidad sea una experiencia inolvidable.</p>
+          </section>
+          <section id="lugares">
+            <h3>2.2. Lugares imprescindibles para visitar</h3>
+            <p>Japón ofrece una variedad de lugares fascinantes que reflejan su rica historia, cultura y modernidad. A continuación, te presentamos algunos de los destinos que no puedes perderte:</p>
+            <ul>
+              <li>
+                <strong>Tokio:</strong>
+                La vibrante capital de Japón es famosa por sus rascacielos, cultura pop, y tecnología avanzada. Lugares destacados incluyen el barrio de
+                <em>Shibuya</em>
+                , el cruce más concurrido del mundo; el histórico
+                <em>Templo Senso-ji</em>
+                en Asakusa; y el moderno distrito de
+                <em>Akihabara</em>
+                , conocido como el paraíso de los aficionados al anime y la electrónica.
+              </li>
+              <li>
+                <strong>Kioto:</strong>
+                Conocida como el corazón cultural de Japón, Kioto alberga numerosos templos, santuarios y jardines tradicionales. Entre los más populares están el
+                <em>Pabellón Dorado (Kinkaku-ji)</em>
+                , el
+                <em>Santuario Fushimi Inari</em>
+                con sus icónicos torii rojos, y el
+                <em>Templo Kiyomizu-dera</em>
+                , famoso por sus vistas panorámicas de la ciudad.
+              </li>
+              <li>
+                <strong>Hiroshima:</strong>
+                Esta ciudad, conocida por su historia y su trágico pasado, es el hogar del
+                <em>Parque de la Paz</em>
+                y el
+                <em>Museo de la Bomba Atómica</em>
+                , lugares que rinden homenaje a las víctimas y promueven un mensaje de paz. Muy cerca de allí, se encuentra la isla de
+                <em>Miyajima</em>
+                , famosa por su
+                <em>torii flotante</em>
+                en el Santuario Itsukushima.
+              </li>
+              <li>
+                <strong>Nara:</strong>
+                Nara, la antigua capital de Japón, es famosa por el
+                <em>Gran Buda</em>
+                en el Templo Todai-ji y el
+                <em>Parque de Nara</em>
+                , donde los ciervos deambulan libremente y los visitantes pueden interactuar con ellos en un entorno único.
+              </li>
+              <figure>
+                <img src="img/japon2.png" alt="Tokyo japan en el templo de asakusa sensoji." width="900" height="600"class="inline-image"/>
+                <figcaption>El templo Sensoji (浅草寺) es el templo budista más antiguo de Tokio.</figcaption>
+              </figure>
+              <li>
+                <strong>Monte Fuji:</strong>
+                El Monte Fuji es el símbolo más reconocido de Japón y una visita obligada para los amantes de la naturaleza y el senderismo. Puedes disfrutar de espectaculares vistas del monte desde el
+                <em>Lago Kawaguchi</em>
+                o aventurarte a escalarlo durante la temporada de verano.
+              </li>
+            </ul>
+            <p>Estos destinos ofrecen una visión completa de la esencia de Japón, desde su modernidad deslumbrante hasta su profundo respeto por las tradiciones y la naturaleza.</p>
+          </section>
+          <section id="alojamiento">
+            <h3>2.3. Dónde alojarse</h3>
+            <p>Japón ofrece una variedad de opciones de alojamiento que se adaptan a todos los gustos y presupuestos. Desde lujosos hoteles hasta tradicionales ryokan, aquí te mostramos algunas opciones destacadas:</p>
+            <ul>
+              <li>
+                <strong>Hoteles de lujo:</strong>
+                En las principales ciudades como Tokio y Kioto, encontrarás hoteles de renombre internacional que ofrecen servicios de alta gama. El
+                <em>Park Hyatt Tokyo</em>
+                y el
+                <em>Ritz-Carlton Kyoto</em>
+                son dos opciones recomendadas para aquellos que buscan una experiencia de lujo.
+              </li>
+              <li>
+                <strong>Ryokan:</strong>
+                Los ryokan son alojamientos tradicionales japoneses que ofrecen una experiencia única de inmersión en la cultura. Hospedarse en un ryokan como el
+                <em>Gora Kadan</em>
+                en Hakone permite disfrutar de habitaciones con tatami, baños termales onsen y cocina kaiseki.
+              </li>
+              <li>
+                <strong>Hostales y pensiones:</strong>
+                Para los viajeros con un presupuesto más ajustado, los hostales y pensiones en Japón son opciones accesibles y bien mantenidas. El
+                <em>Tokyo Central Youth Hostel</em>
+                y los
+                <em>hostales de Kyoto Backpackers</em>
+                son populares entre los turistas jóvenes.
+              </li>
+              <li>
+                <strong>Cápsulas:</strong>
+                Los hoteles cápsula, una alternativa moderna y económica, son ideales para una estancia corta. Las cápsulas son espacios individuales compactos, como en el
+                <em>9 Hours Capsule Hotel</em>
+                en Tokio, que ofrece una experiencia futurista y minimalista.
+              </li>
+            </ul>
+            <figure>
+              <img src="img/alojamiento2.png" alt="El Kuyakusho-mae Capsule Hotel"/>
+              <figcaption>El Kuyakusho-mae Capsule Hotel está situado en el corazón de la animada zona de Shinjuku, a 350 metros de la estación de tren de Shinjuku. Ofrece camas cápsula compactas con TV privada y reloj despertador.</figcaption>
+            </figure>
+            <p>Independientemente del tipo de alojamiento que elijas, la hospitalidad japonesa garantiza una experiencia memorable para todos los visitantes.</p>
+          </section>
+          <section id="comida">
+            <h3>2.4. Dónde comer</h3>
+            <p>La gastronomía japonesa es reconocida mundialmente por su sabor y frescura. Japón cuenta con una variedad de lugares donde probar desde la cocina tradicional hasta innovadoras creaciones culinarias. A continuación, algunos lugares recomendados:</p>
+            <ul>
+              <li>
+                <strong>Restaurantes tradicionales:</strong>
+                Para una auténtica experiencia culinaria japonesa, visita un restaurante de sushi como el famoso
+                <em>Sukiyabashi Jiro</em>
+                en Tokio, o disfruta de una cena de estilo kaiseki en
+                <em>Gion Karyo</em>
+                en Kioto.
+              </li>
+              <li>
+                <strong>Izakayas:</strong>
+                Los izakayas son bares informales donde se sirven pequeñas porciones de comida para compartir. Lugares como el
+                <em>Shinjuku Omoide Yokocho</em>
+                en Tokio ofrecen una experiencia relajada y auténtica, perfecta para degustar platos locales y disfrutar de un ambiente social.
+              </li>
+              <li>
+                <strong>Comida callejera:</strong>
+                Japón es famoso por su comida callejera, especialmente en Osaka. Prueba los
+                <em>takoyaki</em>
+                (bolas de pulpo) y el
+                <em>okonomiyaki</em>
+                (una especie de tortilla japonesa) en el barrio de
+                <em>Dotonbori</em>
+                .
+              </li>
+              <li>
+                <strong>Cafeterías temáticas:</strong>
+                Japón es conocido por sus cafeterías temáticas únicas. Desde cafés de gatos hasta cafeterías inspiradas en anime, como el
+                <em>Café Ghibli</em>
+                en Tokio, ofrecen una experiencia divertida y peculiar para los visitantes.
+              </li>
+            </ul>
+            <img src="img/comer.png" alt="Sashimi (en este caso, de la cena en un ryokan de Hakone)"/>
+            <figcaption>Comer en Japón suele ser barato, rico y con una oferta muy variada, como comprobarás más adelante. Por supuesto, también hay opciones de alta cocina que te recomendamos para ocasiones especiales, no en vano Tokio es la ciudad con más estrellas Michelin del mundo.</figcaption>
+          </figure>
+          <p>Explorar la comida en Japón es una aventura en sí misma, con opciones para todos los gustos y una calidad excepcional que se encuentra en cada rincón del país.</p>
+        </section>
+      </section>
+    </article>
+  </main>
+</body>
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="#politica-cookies">Política de cookies</a>
+      <br/>
+      
+      <a href="#aviso-legal">Aviso legal y Política de privacidad</a>
+      <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </div>
+    <ul class="rrss">
+      <li>
+        <a href="#" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </li>
+    </ul>
+    <a href="#top" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+</footer>
+</html>

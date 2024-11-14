@@ -1,0 +1,45 @@
+/*color header: 246355;
+color borde: 0F362D;
+COLOR ILUMINADO: 369681;*/
+
+body {
+  background-color: #632462;
+  font font: Arial;
+}
+#main-container {
+  margin: 150px auto;
+  width: 600px;
+}
+table {
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  /*/*  border: solid 1px black;(quitando 
+esta propiedad eliminas el rayado de lineas) */
+  padding: 20px;
+}
+thead {
+  background-color: #246355;
+  border-bottom: solid 5px #0F362D;
+  color: white;
+}
+tr:nth-child(even) {
+  /* hijos pares*/
+  background-color: #ddd;
+}
+/*tr:nth-child(odd) {
+   hijos impares
+  background-color: yellow;
+}*/
+
+tr:nth-child(even):hover {
+  background-color: 369681;
+  color: blue;
+}
+tr:nth-child(odd):hover {
+  background-color: 369681;
+  color: red;
+}

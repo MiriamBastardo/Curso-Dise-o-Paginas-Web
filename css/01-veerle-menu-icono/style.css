@@ -1,0 +1,135 @@
+/*Esto es una variable, para alicar una misma característica a varios elementos, en este caso, el color del nav Tutorials #00CCFF. Una variable lleva dos guiones antes (--). Poner la variable en el root:*/
+/*
+1. Variables
+2. Tipografía
+3.*/
+
+:root{
+	--color-tutorials: #00CCFF;
+	--borde-caja: 1px solid;
+}
+@font-face{
+	font-family: SourceSansPro;
+	src: url(fonts/SourceSansPro-Regular.otf);
+	font-style: normal;
+}
+@font-face{
+	font-family: SourceSansPro;
+	src: url(fonts/SourceSansPro-It.otf);
+	font-style: italic;
+}
+@font-face{
+	font-family: SourceSansPro;
+	src: url(fonts/SourceSansPro-BoldIt.otf);
+	font-style: bold;
+}
+font-family
+/*La forma de calcular la anchura y la altura de los elementos box-sizing: content-bos; Por defedcto. Por ejemplo: la anchura de un elemento se calcula width + anchura bordes hrozontales + paddings horizontales. A un elemnto con width: 60px; border: 2px solid; padding: 10px; 60 + 2 * 2 (los dos bordes) 10 * 2 (los dos paddings)
+En cambio box-sizing: border-box; El mismo ejemplo su anchura es 60*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: SourceSansPro;
+/*Se puede poner la fuente que se va a utilizar (SourceSansPro), después coma, y después de la coma, las fuentes alternativas en caso de poder utilizarse la primera*/
+/*	Seria así:
+	font-family: SourceSansPro, Arial, sans-serif;*/
+/*	font-family: "Montserrat", sans-serif;*/
+/*Aunque hayamos puesto varias fuentes, la última fuente escrita es la que se va a utlizar preferentemente, en este caso en el que tenemos la "SourceSansPro" y la "Montserrat", se utilizará la "Montserrat", incluso por delante de la fuente que hayamos puesto en @font-face al principio*/
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+/*Quitar los puntos de viñeta de la lista (afecta a "ul")*/
+ul{
+	list-style-type: none;
+}
+/*Ampliar espacio entre elementos (padding).
+Dar naturañeza de bloque, pero en linea, si saltos de línea.*/
+nav a{
+	background-repeat: no-repeat;
+	padding: 16px 16px 16px 52px;
+	text-transform: uppercase;
+	display: inline-block;
+	background-size: 24px auto;
+	background-position: 8px center;
+	font-weight: bold;
+	font-style: italic;
+}
+main.tutorials .con-borde{
+	border: var(--borde-caja) var(--color-tutorials);
+}
+nav a:hover{
+	color: #fff;
+}
+nav [title="Home"], nav [title="Search"]{
+	background-position: center center;
+	padding: 0;
+	width: 64px;
+	height: 64px;
+	text-indent: -9999px;
+}
+nav [title="Home"]{
+	background-image: url("img/icon-home.svg");
+	background-color: #F6F2EE;
+	background-size: 40px auto;
+}
+nav [title="Search"]{
+	background-image: url("img/icon-search.svg");
+}
+nav [title="Search"]:hover{
+	background-image: url("img/icon-search-white.svg");
+	background-color: #000;
+}
+/*Color aplicado SIN VARIABLE a "tutorials":*/
+/*nav [title="Tutorials"]{
+	color: #00ccff;
+	background-image: url("img/icon-tutorials.svg");
+}*/
+/*Color aplicado CON VARIABLE a "tutorials":*/
+nav [title="Tutorials"]{
+	color: var(--color-tutorials);
+	background-image: url("img/icon-tutorials.svg");
+}
+/*Color aplicado SIN VARIABLE a "tutorials" hover:*/
+/*nav [title="Tutorials"]:hover{
+	background-color: #00CCFF;
+	background-image: url("img/icon-tutorials-white.svg");
+}*/
+/*Color aplicado CON VARIABLE a "tutorials" hover:*/
+nav [title="Tutorials"]:hover{
+	background-color: var(--color-tutorials);
+	background-image: url("img/icon-tutorials-white.svg");
+}
+nav [title="Articles"]{
+	color: #000;
+	background-image: url("img/icon-articles.svg");
+}
+nav [title="Articles"]:hover{
+	background-color: #000;
+	background-image: url("img/icon-articles-white.svg");
+}
+nav [title="Inspiration"]{
+	color: #FF80AA;
+	background-image: url("img/icon-inspiration.svg");
+}
+nav [title="Inspiration"]:hover{
+	background-color: #FF80AA;
+	background-image: url("img/icon-inspiration-white.svg");
+}
+nav [title="Sidenotes"]{
+	background-image: url("img/icon-sidenotes.svg");
+}
+nav [title="Sidenotes"]:hover{
+	color:#000;
+	background-color: #F6F2EE;
+}
+
+/*Comentarios no visibles:*/
+/*COLORES
+Morado: #786596
+Rosa: #FF80AA
+Negro: #000
+Gris: #F6F2EE*/

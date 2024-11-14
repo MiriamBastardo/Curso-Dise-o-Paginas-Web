@@ -1,0 +1,78 @@
+/*Todos los elementos cuyo title="Home" nav nav [title="Home"] 
+Todos los a (enlaces) cuyo title="Home" nav nav [title="Home"] */
+
+*a {
+  box-sizing: border-box;
+}
+a {
+  color: #000 text-decoration:none;
+}
+ul {
+  list-style-type: none;
+}
+nav a {
+  background-repeat: no-repeat;
+  padding: 16px 16px 16px 52px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  background-size: 24px auto;
+  background-position: 16px center;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #fff;
+}
+nav [title="Home"], nav [title="Search"] {
+  background-position: center - center;
+  padding: 0;
+  width: 64px;
+  height: 64px;
+  text-indent: -9999px;
+}
+nav [title="Home"] {
+  background-image: url("../img/icon-home.svg");
+  background-color: #FBFA8;
+  background-size: 40px auto;
+}
+nav [title="Tutorials"] {
+  color: #786596;
+  background-image: url("../img/icon-tutorials.svg");
+}
+nav [title="Tutorials"]:hover {
+  background-color: #786596;
+  background-image: url("../img/icon-tutorials-active.svg");
+  icon-tutorials-active.svg
+}
+nav [title="Articles"] {
+  background-image: url("../img/icon-articles.svg");
+  color: #000;
+}
+nav [title="Articles"]:hover {
+  background-color: #000;
+  background-image: url("../img/icon-articles-active (1).svg");
+}
+nav [title="Inspiration"] {
+  background-image: url("../img/icon-inspiration.svg");
+  color: #FF80AA;
+}
+nav [title="Inspiration"]:hover {
+  background-color: #FF80AA;
+  background-image: url("../img/icon-inspiration-active.svg");
+}
+nav [title="Slinotes"] {
+  background-image: url("../img/icon-sidenotes.svg");
+  color: #000;
+}
+nav [title="Slinotes"]:hover {
+  background-color: #000;
+  background-image: url("../img/icon-sidenotes2.svg");
+}
+nav [title="Search"] {
+  background-image: url("../img/icon-search.svg");
+  color: #00F;
+}
+nav [title="Search"]:hover {
+  background-color: #00F;
+  background-image: url("../img/icon-search2.svg");
+}

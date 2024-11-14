@@ -1,0 +1,62 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 1em;
+  background-color: #f9f9f9;
+}
+table.sin-rayado {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra externa */
+}
+/* Estilo de encabezado */
+
+.sin-rayado thead th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  border: none;
+  /* Eliminar el borde del encabezado */
+}
+.sin-rayado tbody tr:nth-child(2) {
+  border-right: 1px solid white;
+}
+.sin-rayado tbody tr:nth-child(4) {
+  border-right: 1px solid white;
+}
+/* Eliminar el borde del encabezado */
+
+td, th {
+  padding: .25em;
+  /*border: 1px solid black;*/
+  border: none;
+}
+tbody:nth-child(odd) {
+  background: #CCC;
+}
+/*tbody:hover td[rowspan], tr:hover td {
+  background: red;
+}*/
+
+/* Efecto hover para cada fila de la tabla */
+
+.sin-rayado tbody tr:hover {
+  background-color: #e6f9ff;
+  /* Fondo azul claro en hover */
+  transition: background-color 0.3s ease;
+}
+tbody:hover, tr.hover, th.hover, td.hover, tr.hoverable:hover {
+  background-color: #e6f9ff;
+}
+.sin-rayado th, .sin-rayado td {
+  vertical-align: middle;
+}
+/* Espaciado para los encabezados y filas de datos */
+
+.sin-rayado th, .sin-rayado td {
+  vertical-align: middle;
+}

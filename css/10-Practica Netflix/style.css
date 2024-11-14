@@ -1,0 +1,95 @@
+ body {
+   font-family: Arial, sans-serif;
+   align-items: center;
+   background-color: #f4f4f9;
+   color: #333;
+   direction: ltr;
+   font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+   font-size: 16px;
+ }
+ h1 {
+   text-align: center;
+   color: #333;
+ }
+ table {
+   border-collapse: collapse;
+   border: none;
+   width: 60%;
+   margin: 20px auto;
+   table-layout: fixed;
+   text-align: center;
+   padding-bottom: 20px;
+ }
+ }
+ th, td {
+   padding: 1rem;
+ }
+ tr {
+   display: table-row;
+   vertical-align: inherit;
+   unicode-bidi: isolate;
+   border-color: inherit;
+ }
+ th {
+   font-size: 17px;
+   font-weight: 500;
+   margin: 0 auto;
+   padding: 18px;
+   text-align: center;
+ }
+ thead th:first-child {
+   background-color: transparent;
+   color: transparent;
+   border: none;
+ }
+ button {
+   background-color: ##f9070f;
+   font-weight: bold;
+   background: #f9070f;
+   font-size: 24px;
+   font-weight: 400;
+   border-radius: 4px;
+   font-size: 24px;
+   font-weight: 400;
+   min-height: 64px;
+   line-height: 1;
+   min-height: 110px;
+   padding: 20.5px 2em;
+   width: 100%;
+   max-width: 440px;
+   color: white;
+   margin: 0 auto;
+   text-align: center;
+   display: block;
+   border: 0 none;
+ }
+ button:hover {
+   background-color: #F0A1A7;
+ }
+ tbody>tr>*:not(tbody>tr:last-child>*) {
+   border-bottom: solid 1px grey;
+ }
+ thead label {
+   width: 100px;
+   height: 100px;
+   color: white;
+   background color: #f9070f;
+   background: #f9070f;
+   text-align: center;
+   font-weight: normal;
+   margin: 0 auto;
+ }
+ thead th::after {
+   content: "";
+   display: block;
+   width: 0;
+   height: 0;
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   border-top: 12px solid red;
+   margin: 0 auto;
+ }
+ svg {
+   width: 20px;
+   fill: red;
+ }

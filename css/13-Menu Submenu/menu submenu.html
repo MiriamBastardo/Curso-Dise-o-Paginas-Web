@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu submenu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.edu-au-vic-wa-nt-pre-<uniquifier> {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+        nav{
+            text-align:center;
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+        }
+        nav > ul{
+            list-style: none;
+            padding: 0;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 1rem 0 ;
+            display: block;
+             }
+        nav > ul > li > a{
+                background-color: orange;
+                color:white;
+                text-transform: uppercase;
+                border-block: royalblue 1px solid;
+        }
+        nav ul ul a{ 
+                color: orange;
+        }
+        @media(min-width: 768px) { 
+            nav > ul > li, nav a{
+                display: inline;
+            }
+            nav ul ul{
+                display: none;
+            }
+         }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Ecoturismo</a>
+           
+                <ul>
+                    <li><a href="">Senderismo</a></li>
+                    <li><a href="">Tours de Flora</a></li>
+                    <li><a href="">Safaris</a></li>
+                </ul> 
+            </li>
+            <li>
+                <a href="">Aventura</a>
+       
+                    <ul>
+                        <li><a href="">Barranquismo</a></li>
+                        <li><a href="">Espelología</a></li>
+                        <li><a href="">Rafting</a></li>
+                    </ul> 
+            </li>
+            <li> 
+                <a href="">Pirineos</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

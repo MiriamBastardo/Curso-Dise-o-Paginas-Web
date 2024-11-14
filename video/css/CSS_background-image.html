@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <style>
+            /*body {
+                background-image: url("../img/star.png"), url("../img/lizard.png");
+                background-repeat: repeat, no-repeat;
+            }*/
+            /* Shared for all DIVS in example */
+    ol,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    div {
+      background-image: url(../img/star.png);
+      width: 160px;
+      height: 70px;
+    }
+    
+    /* Background repeats */
+    .one {
+      background-repeat: no-repeat;
+    }
+    .two {
+      background-repeat: repeat;
+    }
+    .three {
+      background-repeat: repeat-x;
+    }
+    .four {
+      background-repeat: repeat-y;
+    }
+    .five {
+      background-repeat: space;
+    }
+    .six {
+      background-repeat: round;
+    }
+    
+    /* Multiple images */
+    .seven {
+      background-image: url(../img/star.png), url(../img/lizard.png);
+      background-repeat: repeat;
+      height: 144px;
+    }    
+        </style>
+  </head>
+  <body>
+    <!-- <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae sapiente reiciendis, quas, iste accusamus sit hic quae, asperiores possimus magni vitae laboriosam accusantium autem deserunt recusandae modi soluta mollitia.</p>
+      <p>Aperiam aliquid at nobis sapiente quaerat sunt tempore quasi blanditiis exercitationem a provident doloribus saepe eum, minus quisquam? Delectus, eligendi porro unde doloremque et maiores cupiditate quaerat natus ullam consectetur.</p>
+      <p>Unde autem commodi aliquid error nesciunt dicta nobis nam officiis iste nulla ipsam sit accusantium ex quibusdam minus delectus qui, quisquam harum! Necessitatibus, quis neque ullam dolorum voluptatum nemo itaque.</p>
+      <p>Ea qui ex tempore, ut expedita cupiditate, esse nostrum quos excepturi, id accusamus? Maxime quae similique reprehenderit animi excepturi fugit amet laborum repudiandae suscipit commodi delectus, illum molestias consequuntur optio.</p>
+      <p>Blanditiis ex quos quia recusandae nesciunt quasi, ab iure, quod repellendus atque ea dolorem rem provident laudantium praesentium, esse reiciendis quisquam labore, voluptas facere. Nostrum debitis voluptatum, sapiente quaerat ipsam?</p>
+    </div> -->
+    <ol>
+      <li>
+        no-repeat
+        <div class="one"></div>
+      </li>
+      <li>
+        repeat
+        <div class="two"></div>
+      </li>
+      <li>
+        repeat-x
+        <div class="three"></div>
+      </li>
+      <li>
+        repeat-y
+        <div class="four"></div>
+      </li>
+      <li>
+        space
+        <div class="five"></div>
+      </li>
+      <li>
+        round
+        <div class="six"></div>
+      </li>
+      <li>
+        repeat-x, repeat-y (multiple images)
+        <div class="seven"></div>
+      </li>
+    </ol>
+  </body>
+</html>

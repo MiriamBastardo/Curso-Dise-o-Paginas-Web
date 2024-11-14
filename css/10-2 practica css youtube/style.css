@@ -1,0 +1,125 @@
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightgrey;
+  font-family: Arial, sans-serif;
+}
+#container {
+  width: 1100px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+/* Header */
+
+header {
+  background: red;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  border-bottom: 3px dashed black;
+}
+/* Navegación */
+
+nav {
+  background: lightblue;
+  height: 50px;
+  border: 1px solid black;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 15px;
+  line-height: 50px;
+}
+/* Contenedor principal de contenido y aside */
+
+#main-content {
+  display: flex;
+  gap: 20px;
+  /* Espacio entre content y aside */
+  margin-top: 20px;
+}
+/* Contenido principal */
+
+#content {
+  flex: 3;
+  background: white;
+  padding: 20px;
+}
+.article {
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.article h2 {
+  font-size: 25px;
+}
+/* Aside (barra lateral) */
+
+aside {
+  flex: 1;
+  background: orange;
+  padding: 20px;
+  color: white;
+  height: auto;
+}
+/* Footer */
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+/* Footer */
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Contenedor de contenido del footer */
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+/* Enlaces y texto en el footer */
+
+.footer-links {
+  text-align: center;
+  color: white;
+}
+/* Redes sociales en línea */
+
+ul.rrss {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+ul.rrss li a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+/* Efecto hover para iconos de redes sociales */
+
+ul.rrss li a:hover {
+  color: #4C

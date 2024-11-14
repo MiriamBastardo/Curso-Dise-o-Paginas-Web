@@ -1,0 +1,182 @@
+Aquí tienes un modelo de hoja de estilos organizada, ideal para un proyecto HTML. Incluye secciones básicas que puedes adaptar a tus necesidades. La organización sigue prácticas recomendadas, con comentarios que explican cada bloque y estilos básicos de ejemplo para una estructura HTML típica.
+
+### Modelo de Hoja de Estilos (CSS)
+
+/* --------- Reset / Normalización de Estilos --------- */
+```css
+/* Restablece márgenes, rellenos y otros estilos predeterminados del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+  line-height: 1.6;
+}
+```
+
+/* --------- Estilos Globales --------- */
+```css
+/* Estilos generales y clases de uso común */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.center {
+  text-align: center;
+}
+```
+
+/* --------- Encabezado (Header) --------- */
+```css
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+```
+
+/* --------- Estilos del Cuerpo (Main Content) --------- */
+```css
+/* Configuración de los estilos principales */
+main {
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+```
+
+/* --------- Sección de Tarjetas o Componentes --------- */
+```css
+.card {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+```
+
+/* --------- Botones --------- */
+```css
+.button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+```
+
+/* --------- Pie de Página (Footer) --------- */
+```css
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+```
+
+/* --------- Consultas de Medios (Responsive Design) --------- */
+```css
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+```
+
+### Explicación de las Secciones
+1. **Reset de Estilos:** Establece una base consistente eliminando márgenes y rellenos predeterminados.
+2. **Estilos Globales:** Define clases reutilizables como `.container`, `.hidden`, y `.center`.
+3. **Encabezado (Header):** Incluye estilo básico para la cabecera, con un menú de navegación.
+4. **Cuerpo Principal (Main Content):** Configura los elementos `h2`, `p`, y el área principal de contenido.
+5. **Tarjetas o Componentes (`.card`):** Crea un componente reutilizable para tarjetas o secciones con imagen y texto.
+6. **Botones:** Define estilos básicos de botones.
+7. **Pie de Página (Footer):** Configura un pie de página con estilos básicos de texto y enlaces.
+8. **Responsive Design:** Agrega una consulta de medios para ajustar el diseño en dispositivos más pequeños.
+
+Este modelo te ofrece una base que puedes adaptar a las necesidades de tu proyecto y agregar o modificar según lo necesites.

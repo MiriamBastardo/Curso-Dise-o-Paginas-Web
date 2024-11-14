@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Exploración Espacial</title>
+    <style>
+          /* Estilos generales */
+          body {
+            background: linear-gradient(to bottom, #000000, #0d1a26); /* Gradiente de fondo, simulando el espacio */
+            color: #ffffff;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+          }
+    
+          h1, h2 {
+            text-align: center;
+            margin-top: 30px;
+          }
+    
+          h1 {
+            font-size: 3.5em;
+            color: #00ccff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+    
+          h2 {
+            font-size: 2.2em;
+            color: #1E90FF;
+          }
+    
+          p {
+            text-align: center;
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+          }
+    
+          /* Estilo para una imagen espacial hipotética */
+          .espacio {
+            display: block;
+            margin: 40px auto;
+            border: 2px solid #ffffff;
+            width: 400px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+          }
+    
+          .espacio:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+          }
+    
+          /* Botones con efectos */
+          button {
+            background-color: #1E90FF;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+          }
+    
+          button:hover {
+            background-color: #4682B4;
+            transform: scale(1.1);
+          }
+    
+          /* Estilos para dividir el contenido en secciones */
+          .section {
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: 30px 0;
+            border-radius: 10px;
+          }
+        </style>
+  </head>
+  <body>
+    <!-- Título principal -->
+    <h1>Exploración Espacial</h1>
+    <!-- Sección sobre la exploración espacial -->
+    <div class="section">
+      <h2>¿Qué es la exploración espacial?</h2>
+      <p>
+        <strong>La exploración espacial</strong>
+        designa los esfuerzos del hombre en estudiar el espacio y sus astros desde el punto de vista científico y de su explotación económica.
+      </p>
+      <p>Estos esfuerzos pueden involucrar tanto seres humanos viajando en naves espaciales como satélites con recursos de telemetría o sondas teleguiadas enviadas a otros planetas.</p>
+    </div>
+    <!-- Sección sobre los astronautas -->
+    <div class="section">
+      <h2>Los astronautas</h2>
+      <p>Las personas que pilotan naves espaciales, o son pasajeros en ellas, se llaman astronautas (en Rusia: cosmonautas; en China: taikonautas).</p>
+      <p>Técnicamente se considera astronauta a todo aquel que emprenda un vuelo sub-orbital u orbital a como mínimo 100 km de altitud.</p>
+    </div>
+    <!-- Sección sobre la exploración espacial en la literatura -->
+    <div class="section">
+      <h2>La exploración espacial en la literatura</h2>
+      <p>
+        El cielo siempre ha atraído la atención y los sueños del hombre. Ya en 1634 se publicó la que se considera primera novela de ciencia ficción,
+        <strong>Somnium</strong>
+        , de Johannes Kepler.
+      </p>
+      <p>Más tarde, en 1865, Julio Verne escribe sobre un grupo de hombres que viajó hasta la Luna usando un gigantesco cañón.</p>
+      <p>
+        En Francia, Georges Méliès, pionero del cine, creó
+        <em>Le voyage dans la Lune</em>
+        (1902), una de las primeras películas de ciencia ficción.
+      </p>
+    </div>
+    <!-- Botón de acción para explorar más -->
+    <button onclick="window.location.href='https://es.wikipedia.org/wiki/Exploraci%C3%B3n_espacial';">Explora más sobre el espacio</button>
+    <!-- Imagen hipotética -->
+    <img class="espacio" src="espacio.jpg" alt="Espacio Exterior"/>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LcCCmEqAAAAAFkvLPsa_BsOjPdrSV2_q4ZTnpon'> 
+    </script>
+    <script>
+    grecaptcha.ready(function() {
+    grecaptcha.execute('6LcCCmEqAAAAAFkvLPsa_BsOjPdrSV2_q4ZTnpon', {action: 'formulario'})
+    .then(function(token) {
+    var recaptchaResponse = document.getElementById('recaptchaResponse');
+    recaptchaResponse.value = token;
+    });});
+    
+    </script>
+    <title>Formulario 1</title>
+  </head>
+  <body>
+    <form action="proceso-formulario/proceso-formulario14.php" method="post">
+      <input type="hidden" name="recaptcha_response" id="recaptchaResponse"/>
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder=" Escribe tu nombre"/>
+        </div>
+        <div>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tu apellido"/>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com"/>
+        </div>
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input type="telefono" id="telefono" name="telefono"/>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password"/>
+        </div>
+        <div>
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" id="privacidad" required/>
+          <label for="privacidad">
+            Acepto la
+            <a href="politica-privacidad.php"></a>
+            y el uso de mis datos personales.
+          </label>
+        </div>
+        <div>
+          <input type="submit" value="Enviar"/>
+        </div>
+      </form>
+    </body>
+  </html>
